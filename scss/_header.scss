@@ -1,8 +1,42 @@
 .header {
-    height: 60px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
     background-color: #AA0601;
-    padding: 10px;
+    padding: 10px 10px 10px 10px;
 }
-.menu {
-    list-style: none;
+.header h1 {
+    max-width: 80px;
+}
+.header img {  
+    width: 60px;
+    height: auto;
+    margin-left: 70px;
+    
+    
+}
+.header ul {
+    display: flex;
+   
+}
+.header ul li {
+    display: flex;
+    margin-right: 64px;
+}
+.header a {
+    display: flex;  
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;   
+    cursor: pointer;
+}
+
+
+// rwd
+@media (max-width:766px){
+    header {
+        
+    }
 }
