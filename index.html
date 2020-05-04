@@ -4,44 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css"> 
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="css/all.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    
+
     <title>week3</title>
 </head>
 
 <body>
-<div class="wrap">
-    <div class="header">
-        <a class="menuBtn" href="#">
-            <i class="fas fa-bars"></i>
-        </a>
-        <h1>
-            <a href="#">
-                <img src="https://upload.cc/i1/2020/04/26/VJmMby.png" alt="logo" />
+    <div class="wrap">
+        <!-- header start -->
+        <div class="header">
+            <a class="menuBtn" href="#">
+                <i class="fas fa-bars"></i>
             </a>
-        </h1>
-        <ul class="menu">
-            <li><a href="#">系列鏡框</a></li>
-            <li><a href="#">門市據點</a></li>
-            <li><a href="#">部落格</a></li>
-            <li><a href="#">常見問題</a></li>
+            <h1>
+                <a href="#">
+                    <img src="https://upload.cc/i1/2020/04/26/VJmMby.png" alt="logo" />
+                </a>
+            </h1>
+            <ul class="menu">
+                <li><a href="#">系列鏡框</a></li>
+                <li><a href="#">門市據點</a></li>
+                <li><a href="#">部落格</a></li>
+                <li><a href="#">常見問題</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- header end -->
+    <!-- banner start -->
+    <div class="banner">
+        <div class="container">
+            <div class="banner-title">
+                <h2 class="slogan"><span class="slogan-sm">Promise-Desert 2020 早春系列</span>
+                    </br>
+                    看得清，才能看得遠</h2>
+            </div>
+        </div>
+    </div>
+    <!-- banner end -->
+    <!-- content start-->
+    <div class="content">
+        <div class="container">
+            <h2>用專業的心，做專業的事</h2>
+            <ul class="cards">
+                <li class="card-item">
+                    <div class="card-icon">
+                        <img src="https://raw.githubusercontent.com/kevinshu1995/hex-liveCourse/5be1a0684d09c860dc63224dcf8e6df6d776d944/week3/public/images/icon-dollar.svg"
+                            alt="" />
+                    </div>
+                    <h3 class="s-text-secondary">單一價格</h3>
+                    <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+                </li>
+                <li class="card-item">
+                    <div class="card-icon">
+                        <img src="https://raw.githubusercontent.com/kevinshu1995/hex-liveCourse/5be1a0684d09c860dc63224dcf8e6df6d776d944/week3/public/images/icon-clock.svg"
+                            alt="" />
+                    </div>
+                    <h3 class="s-text-secondary">20 分鐘即可取件</h3>
+                    <p>為了您的寶貴時間著想，以豐 富專業知識與技術將結帳到交 件的時間縮減至最快 20 分鐘 即可完成。</p>
+                </li>
+                <li class="card-item ">
+                    <div class="card-icon">
+                        <img src="https://raw.githubusercontent.com/kevinshu1995/hex-liveCourse/5be1a0684d09c860dc63224dcf8e6df6d776d944/week3/public/images/icon-heart.svg"                            alt="" />
+                    </div>
+                    <h3 class="s-text-secondary">安心售後服務</h3>
+                    <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+                </li>
+                <li class="card-item">
+                    <div class="card-icon">
+                        <img src="https://raw.githubusercontent.com/kevinshu1995/hex-liveCourse/5be1a0684d09c860dc63224dcf8e6df6d776d944/week3/public/images/icon-glasses.svg"                            alt="" />
+                    </div>
+                    <h3 class="s-text-secondary">關於鏡片</h3>
+                    <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。 </p>
+                </li>
+            </ul>
+        </div>
         </ul>
     </div>
-</div>
-</div>
+    </div>
+    </div>
 
 
-<script>
-  $(document).ready(function () {
-        $(".menuBtn").click(function (e) {
-            e.preventDefault();
-            $(".menu").toggleClass("active");
+    <script>
+        $(document).ready(function () {
+            $(".menuBtn").click(function (e) {
+                e.preventDefault();
+                $(".menu").toggleClass("active");
+            });
         });
-    });
-</script>
+    </script>
 </body>
 
 </html>

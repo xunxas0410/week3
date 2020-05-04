@@ -1,10 +1,17 @@
+@import "header";
+@import "banner";
 * {
   box-sizing: border-box;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  font-family: "微軟正黑體", serif;
+  font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, “Microsoft JhengHei”, Roboto, “Helvetica Neue”, Arial,
+    sans-serif;
+  line-height: 1.5;
+  margin: 0 auto;
 }
 img {
   display: block;
@@ -12,90 +19,149 @@ img {
   height: auto;
 }
 
-.header {
-  padding: 30px 88px;
-  background-color: #aa0601;
-  display: flex;
-  justify-content: space-between;
-}
-
-.menuBtn {
-  display: none;
-  color: #FFFFFF;
-}
-
-.menu {
-  display: flex;
-  width: 512px;
-  justify-content: space-between;
-}
-
-.menu li {
-  padding: 10px 0;
-}
-.menu li a {
-  color: white;
-  font-size: 20px;
-  line-height: 1.5;
-  text-decoration: none;
+// content start
+.container {
+  max-width: 1224px;
+  margin: 0 auto;
 }
 @media (max-width: 768px) {
-  .header {
-    padding: 30px 48px;
+  .container {
+    max-width: 352px;
   }
-  .menu {
-    max-width: 575px;
+}
+@media (max-width: 568px) {
+  .container {
+    max-width: 352px;
   }
 }
 
-@media (max-width: 575px) {
-  .header {
-    position: relative;
-    justify-content: center;
-    padding: 10px 0;
-    align-items: center;
-    flex-direction: column;
+.content {
+  padding: 64px 0;
+  background-color: #aa06010d;
+}
+@media (max-width: 768px) {
+  .content {
+    padding: 40px 0;
   }
-  .header h1 img {
-    width: 48px;
-    height: 30px;
+}
+@media (max-width: 568px) {
+  .content {
+    padding: 32px 0;
   }
+}
 
-  .menuBtn {
-    display: block;
-    position: absolute;
-    left: 13px;
-    width: 24px;
+.content h2,
+h3, p {
+  line-height: 1.5;
+}
+.content h2,
+h3 {
+  color: #650300;
+}
+.content h2 {
+  margin-bottom: 44px;
+  font-size: 48px;
+  font-weight: 900;
+}
+@media (max-width: 768px) {
+  .content h2 {
+    margin-bottom: 12px;
+    font-size: 32px;
   }
-
-  .menu {
-    max-height: 0px;
-    left: 0;
-    top: 83%;
-    max-width: 100%;
-    position: absolute;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    transition: all 0.8s ease;
-    z-index: 120;
-  } 
-  .menu.active {
-    max-height: 252px;
+}
+@media (max-width: 568px) {
+  .content h2 {
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 2;
   }
+}
 
-  .menu li {
-    display: block;
-    background: #aa0601;
-    color: #ffffff;
-    border-top: 1px solid #ffffff;
-    padding: 16px 0;
-    z-index: 120;
+.content h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.content p {
+  font-size: 16px;
+}
+.content h2 {
+  text-align: center;
+}
+.cards {
+  text-align: center;
+  display: flex;
+  padding: 16px 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .cards {
+    padding: 16px 0 ;
+  }
+}
+@media (max-width: 568px) {
+  .cards {
+    padding: 0 0 16px 0;
+  }
+}
+.card-item {
+  display: flex;
+  padding: 16px 0 24px;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+@media (max-width: 768px) {
+  .card-item {
+    padding: 20px 0 8px;
+    width: 50%;
+    
+  }
+}
+@media (max-width: 568px) {
+  .card-item {
+    padding: 20px 0 8px;
     width: 100%;
+    min-width: 352px;
   }
+}
 
-  .menu li:hover {
-    background: #8f0400;
-  }  
+.card-item .card-icon {
+  height: 100px;
+  padding-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .card-item .card-icon {
+    padding-bottom: 16px;
+  }
+}
+@media (max-width: 568px) {
+  .card-item .card-icon{
+    padding-bottom: 16px;
+  }
+}
+.card-icon img {
+  display: block;
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+.card-icon h3{
+  padding-bottom: 4px;
+}
+@media (max-width:768px){
+  .card-icon h3 {
+    padding-bottom: 8px;
+  }
+}
+@media (max-width:568px){
+  .card-icon h3 {
+    padding-bottom: 4px;
+  }
+}
+
+.card-icon p {
+  text-align: left;
+  max-width: 300px;
 }
