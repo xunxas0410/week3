@@ -90,10 +90,13 @@ h3 {
 .cards {
   text-align: center;
   display: flex;
-  padding: 16px 0;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  padding: 25px ;
+  flex-wrap: wrap; 
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-right: 100px;
 }
 @media (max-width: 768px) {
   .cards {
@@ -105,12 +108,14 @@ h3 {
     padding: 0 0 16px 0;
   }
 }
-.card-item {
+.card-item {  
   display: flex;
-  padding: 16px 0 24px;
+  padding: 16px 0 ;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   width: 25%;
+  margin-bottom: 20px;
 }
 @media (max-width: 768px) {
   .card-item {
@@ -141,27 +146,30 @@ h3 {
     padding-bottom: 16px;
   }
 }
-.card-icon img {
+.card-item img {
   display: block;
   width: auto;
-  height: 100%;
+  height: 100px;
   margin: 0 auto;
 }
-.card-icon h3{
+.container h3 {
   padding-bottom: 4px;
+  padding-left: 20px;
+  margin-top: 40px;
+  font-weight: 900;
 }
 @media (max-width:768px){
-  .card-icon h3 {
+  .card-itemh3 {
     padding-bottom: 8px;
   }
 }
 @media (max-width:568px){
-  .card-icon h3 {
+  .card-item h3 {
     padding-bottom: 4px;
   }
 }
 
-.card-icon p {
+.card-item p {
   text-align: left;
   max-width: 300px;
 }
