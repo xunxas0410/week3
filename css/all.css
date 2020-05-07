@@ -382,26 +382,7 @@ h3 {
   max-width: 300px;
 }
 
-.diamond {
-  background-image: url(https://svgshare.com/i/KYc.svg);
-}
-
-.sun {
-  background-image: url(https://svgshare.com/i/KZA.svg);
-}
-
-.optical-photo {
-  background-image: url(https://i.ibb.co/PTWrkhd/product-1.png);
-  margin-right: 24px;
-}
-
-.sunglasses-photo {
-  background-image: url(https://i.ibb.co/HFgyzRF/product-2.png);
-  margin-left: 24px;
-}
-
-.classic {
-  padding: 64px 0 80px 0;
+.margin-b {
   margin-bottom: 32px;
 }
 
@@ -414,7 +395,11 @@ h3 {
   margin-bottom: 60px;
 }
 
-.classic-optical {
+.classic {
+  padding: 64px 0 80px 0;
+}
+
+.classic-optical, .classic-functional {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -424,10 +409,22 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  margin-bottom: 8px;
+}
+
+.classic-sunglasses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .classic-photo {
@@ -435,7 +432,6 @@ h3 {
   height: 320px;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-right: 24px;
 }
 
 .product-name {
@@ -458,28 +454,141 @@ h3 {
   font-size: 48px;
   line-height: 72px;
   font-style: italic;
-  color: #aa0601;
+  color: #AA0601;
 }
 
-.classic-sunglasses {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 8px;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  margin-left: 0px;
+.optical-photo {
+  background-image: url(https://i.ibb.co/PTWrkhd/product-1.png);
   margin-right: 24px;
+}
+
+.sunglasses-photo {
+  background-image: url(https://i.ibb.co/HFgyzRF/product-2.png);
+  margin-left: 24px;
+}
+
+.functional-photo {
+  background-image: url(https://i.ibb.co/9H6M8vJ/product-3.png);
+  margin-right: 24px;
+}
+
+.diamond {
+  background-image: url(https://svgshare.com/i/KYc.svg);
+}
+
+.sun {
+  background-image: url(https://svgshare.com/i/KZA.svg);
+}
+
+.thunder {
+  background-image: url(https://svgshare.com/i/KX8.svg);
+}
+
+@media (max-width: 992px) {
+  .h2-title {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 32px;
+  }
+  .margin-b {
+    margin-bottom: 8px;
+  }
+  .classic {
+    padding: 40px 0 40px 0;
+  }
+  .classic-optical, .classic-functional {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 5%;
+  }
+  .classic-sunglasses {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 5%;
+  }
+  .sunglasses-photo {
+    margin-left: 0px;
+    margin-right: 24px;
+  }
+  .classic-photo {
+    max-width: 411px;
+    max-height: 168px;
+  }
+  .product-name {
+    width: 45%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .classic-icon {
+    max-width: 32px;
+  }
+  .classic-text {
+    font-size: 28px;
+    line-height: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .h2-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .classic {
+    padding: 24px 0 24px 0;
+  }
+  .classic-photo {
+    display: none;
+  }
+  .classic-optical {
+    background-image: url(https://i.ibb.co/PTWrkhd/product-1.png);
+  }
+  .classic-sunglasses {
+    background-image: url(https://i.ibb.co/HFgyzRF/product-2.png);
+  }
+  .classic-functional {
+    background-image: url(https://i.ibb.co/9H6M8vJ/product-3.png);
+  }
+  .classic-m {
+    height: 134px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .classic-optical, .classic-functional {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .classic-sunglasses {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .product-name {
+    width: 100%;
+  }
+  .classic-text {
+    color: #FFFFFF;
+  }
+  .diamond {
+    background-image: url(https://svgshare.com/i/KXf.svg);
+  }
+  .sun {
+    background-image: url(https://svgshare.com/i/KZD.svg);
+  }
+  .thunder {
+    background-image: url(https://svgshare.com/i/KYY.svg);
+  }
 }
 /*# sourceMappingURL=all.css.map */
