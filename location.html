@@ -12,6 +12,95 @@
     <title>week4</title>
 </head>
 <body>
-    
+    <div class="wrap">
+        <!-- header start -->
+        <div class="header">
+            <a class="menuBtn" href="#">
+                <i class="fas fa-bars"></i>
+            </a>
+            <h1>
+                <a href="#">
+                    <img src="https://upload.cc/i1/2020/04/26/VJmMby.png" alt="logo" />
+                </a>
+            </h1>
+            <ul class="menu">
+                <li><a href="#">系列鏡框</a></li>
+                <li><a href="#">門市據點</a></li>
+                <li><a href="#">部落格</a></li>
+                <li><a href="#">常見問題</a></li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <section class="bannerLocation">
+            <div class="banner-container ">
+                <h2>門市據點</h2>
+                <img src="./img/iconfinder_location_1585851.svg" alt="">
+            </div>
+        </section>
+        <section class="locationsList">
+            選擇地區
+            <select name="" id="">
+                <option value="">台北市</option>
+            </select>
+            <ul class="locationsListShop d-flex">
+                <li>
+                    <img src="./img/70@2x.png" alt="">
+                    <h3>台北中山旗艦店</h3>
+                    <p>
+                        <img class="iconTel" src="./img/iconfinder_Essentials_phone_telephone_vintage_5298737.svg" alt="">
+                        <span>電話：(02)000-1234</span>
+                    </p>
+                    <p>
+                        <img class="iconClock" src="./img/iconfinder_Essentials_time_clock_timer_5298770.svg" alt="">
+                        <span>營業時間：10:00-21:00</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="./img/70@2x.png" alt="">
+                    <h3>台北中山旗艦店</h3>
+                    <p>
+                        <img class="iconTel" src="./img/iconfinder_Essentials_phone_telephone_vintage_5298737.svg" alt="">
+                        <span>電話：(02)000-1234</span>
+                    </p>
+                    <p>
+                        <img class="iconClock" src="./img/iconfinder_Essentials_time_clock_timer_5298770.svg" alt="">
+                    </p>
+                </li>
+                <li>
+                    <img src="./img/70@2x.png" alt="">
+                    <h3>台北中山旗艦店</h3>
+                    <p>
+                        <img class="iconTel" src="./img/iconfinder_Essentials_phone_telephone_vintage_5298737.svg" alt="">
+                        <span>電話：(02)000-1234</span>
+                    </p>
+                    <p>
+                        <img class="iconClock" src="./img/iconfinder_Essentials_time_clock_timer_5298770.svg" alt="">
+                    </p>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+    </main>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $(".menuBtn").click(function (e) {
+                e.preventDefault();
+                $(".menu").toggleClass("active");
+            });
+        });
+    </script>
 </body>
 </html>
