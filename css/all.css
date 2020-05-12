@@ -1101,17 +1101,39 @@ input[type="submit"]:hover {
   font-size: 20px;
   line-height: 28px;
   margin-bottom: 8px;
+  padding-left: 10%;
 }
 
 .locationsList .locationsListShop .iconTel {
   max-width: 26px;
   display: inline-block;
-  padding-left: 10%;
 }
 
 .locationsList .locationsListShop .iconClock {
   max-width: 26px;
   display: inline-block;
-  padding-left: 10%;
+}
+
+.locationsList .locationsListShop .iconlocal {
+  max-width: 26px;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .locationsList {
+    width: 48%;
+  }
+}
+
+@media (max-width: 568px) {
+  .locationsList .locationsListShop p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 48%;
+    margin-bottom: 8px;
+  }
 }
 /*# sourceMappingURL=all.css.map */
