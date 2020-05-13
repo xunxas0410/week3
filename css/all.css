@@ -1270,4 +1270,20 @@ input[type="submit"]:hover {
     margin-left: 10%;
   }
 }
+
+.question {
+  max-width: 1224px;
+  height: auto;
+}
+
+.question_banner {
+  background-image: url(../img/72.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.question_banner_text .question_title .question_icon {
+  padding-top: 240px;
+}
 /*# sourceMappingURL=all.css.map */
