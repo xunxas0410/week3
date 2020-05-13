@@ -479,7 +479,7 @@ textarea {
   width: 99%;
   margin-top: 4px;
   margin-bottom: 16px;
-  
+  padding-top: 24px;
   border: 1px solid #000;
   background-color: transparent;
 }
@@ -693,17 +693,41 @@ input[type="submit"]:hover {
 
 //常見問題 start 
 .question {
-  max-width: 1224px;
-  height: auto;
-}
-.question_banner {
-
-  background-image: url(../img/72.png);
-  background-position:center center;
-  background-repeat: no-repeat;
+  padding-top: 214px;
+  background-image: url(../img/72x2.png);
   background-size: cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+  display: flex; 
 }
-.question_banner_text .question_title .question_icon{
-  padding-top: 240px;
+.question h2 {
+  font-size: 64px;
+  line-height: 90px;
+  margin-right: 10px;
+  margin-left: 400px;
 }
+@media (max-width:767px){
+  .question {
+    padding-top: 103px;
+    padding-bottom: 8px;    
+  }
+  .question  h2 {
+    font-size: 28px;
+    line-height: 28px;
+    margin-left: 11px;    
+  }
+  .question  img {
+    max-width: 24px;
+    
+  }
+}
+//FAQ  start
+.faq {
+  padding: 88px 0 156px 0;
+}
+.faq h2 {
+  font-size: 32px;
+  line-height: 63px;
+  margin-bottom: 16px;
 
+}
