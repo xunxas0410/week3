@@ -601,7 +601,7 @@ input[type="submit"]:hover {
   }
 }
 
-//第二頁 rwd 門市據點 start
+//location  start
 .bannerLocation {
   padding-top: 214px;
   background-image: url(../img/72.png);
@@ -619,85 +619,71 @@ input[type="submit"]:hover {
   line-height: 90px;
   margin-right: 24px;
 }
-.locationsList {
-  padding: 16px 154px 0;
+
+.selectlist label {
   font-size: 24px;
-  line-height: 30px;
-  font-weight: 600;
-  margin: 0 auto;
-  max-width: 1224px;
+ padding: 5%;
 }
-.locationsList select {
-  height: 45px;
+.selectlist {
+  padding: 22px 22px 38px 0;
+}
+.selectlist select {
   width: 266px;
-  padding-left: 19px;
-  font-size: 18px;
-  margin-bottom: 32px;
-  color: #495057;
+  height: 45px;
   margin-left: 22px;
-  cursor: pointer;
 }
-.locationsList option {
-  font-weight: normal;
-  display: block;
-  white-space: pre;
-  min-height: 1.2em;
-}
-.locationsListShop {
-  border: 1px solid #00000020;
-  width: 1224px;
-  height: auto;
-  margin: 0 auto;
-  justify-content: space-around;
+.storecard {
+  display: flex;
   flex-wrap: wrap;
 }
-.locationsList .locationsListShop ul {
-  
-}
-.locationsList .locationsListShop li {
-  
-  width: 33.2%;
+
+.storebox {
+  width: 384px;
+  margin-right: 14px;
   margin-bottom: 28px;
 }
-.locationsList .locationsListShop h3 {
-  padding: 24px;
-  font-size: 24px;
-  font-weight: 600;
-  border-bottom: 1px solid #00000020;
-  margin-bottom: 16px;
-  color: #000;
+.storebox img {
+  display: block;
 }
-.locationsList .locationsListShop p {
-  font-size: 20px;
-  line-height: 28px;
-  margin-bottom: 8px;
-  padding-left: 10%;
+.storebox h2 {
+ 
+  font-size: 24px;  
+  padding: 16px 0 16px 24px;
 }
-.locationsList .locationsListShop .iconTel {
-  max-width: 26px;  
-  display: inline-block;
-  
+.storebox ul {
+  border: 1px solid #00000020;
+  padding: 16px 0 16px 36px;
+  border-top: none;
 }
-.locationsList .locationsListShop .iconClock {
-  max-width: 26px;  
-  display: inline-block;
+.storebox ul li {
+  display: flex; 
+ 
  
 }
-.locationsList .locationsListShop .iconlocal {
-  max-width: 26px;
-  display: inline-block;
+.storeboximg {
+  display: flex;
+  width: 7.5%;
+  margin-right: 5%;
+  margin-bottom: 3%;
+}
+.storeboxtext {
+  font-size: 20px;
+  line-height: 28px;
+  color: #212529;
   
 }
-@media (max-width:768px){
-  .locationsList {
-    width: 48%;
-  }
+
+.infobtn {
+  width: 384px;
+  background: #000000;
+  color: #fff;
+  height: 68px;
+  text-align: center;
+  border: 0 none;
+  font-size: 20px;
 }
-@media (max-width:568px){
-  .locationsList .locationsListShop p{
-    display: flex;
-    flex-wrap: wrap;
-   width: 48%;
-   margin-bottom: 8px;
+@media (max-width: 767px) {
+  .storecard li {
+   margin-left: 10%;
   }
 }
