@@ -1,6 +1,106 @@
 @import "header"; //表頭
 @import "banner";
 @import "footer"; //表尾
+
+
+.bg-cover {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-dark {
+  background-color: #aa0601;
+  color: white;
+}
+
+.bg-light {
+  background-color: #aa06010d;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-baseline {
+  align-items: baseline;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.pb-5 {
+  padding-bottom: 5rem;
+}
+
+.pb-10 {
+  padding-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  .pb-10 {
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .pb-10 {
+    padding-bottom: 1.5rem;
+  }
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 375px) {
+  .mb-1 {
+    margin-bottom: 0.125rem;
+  }
+}
+
+.mb-5 {
+  margin-bottom: 40px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mr-1 {
+  margin-right: 8px;
+}
+
+@media (max-width: 375px) {
+  .mr-1 {
+    margin-right: 0.125rem;
+  }
+}
+
+
 * {
   list-style: none;
   padding: 0;
@@ -376,10 +476,10 @@ h3 {
 
 input[type="text"],
 textarea {
-  width: 100%;
+  width: 99%;
   margin-top: 4px;
   margin-bottom: 16px;
-  padding: 14px 16px;
+  
   border: 1px solid #000;
   background-color: transparent;
 }
@@ -487,107 +587,8 @@ input[type="submit"]:hover {
       color: #AA0601;
     } */
 
-.bg-cover {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
-.bg-dark {
-  background-color: #aa0601;
-  color: white;
-}
 
-.bg-light {
-  background-color: #aa06010d;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.align-baseline {
-  align-items: baseline;
-}
-
-.align-end {
-  align-items: flex-end;
-}
-
-.pb-5 {
-  padding-bottom: 5rem;
-}
-
-.pb-10 {
-  padding-bottom: 5rem;
-}
-
-@media (max-width: 768px) {
-  .pb-10 {
-    padding-bottom: 2.5rem;
-  }
-}
-
-@media (max-width: 375px) {
-  .pb-10 {
-    padding-bottom: 1.5rem;
-  }
-}
-
-.mb-1 {
-  margin-bottom: 0.5rem;
-}
-
-@media (max-width: 375px) {
-  .mb-1 {
-    margin-bottom: 0.125rem;
-  }
-}
-
-.mb-5 {
-  margin-bottom: 40px;
-}
-
-.mb-60 {
-  margin-bottom: 60px;
-}
-
-.mr-1 {
-  margin-right: 8px;
-}
-
-@media (max-width: 375px) {
-  .mr-1 {
-    margin-right: 0.125rem;
-  }
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 @media (max-width: 768px) {
   .container {
@@ -646,9 +647,11 @@ input[type="submit"]:hover {
   display: block;
 }
 .storebox h2 {
- 
+  color: #000;
   font-size: 24px;  
   padding: 16px 0 16px 24px;
+  text-align: center;
+  font-weight: 600;
 }
 .storebox ul {
   border: 1px solid #00000020;
