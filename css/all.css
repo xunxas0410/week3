@@ -1306,12 +1306,117 @@ input[type="submit"]:hover {
 }
 
 .faq {
-  padding: 88px 0 156px 0;
+  margin-bottom: 156px;
 }
 
-.faq h2 {
-  font-size: 32px;
-  line-height: 63px;
-  margin-bottom: 16px;
+.faq-item {
+  border: 1px solid #000000;
+}
+
+.faq-item-header {
+  padding: 22px 38px;
+  border-bottom: 1px solid #000000;
+}
+
+.faq-item-header a {
+  text-decoration: none;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.faq-item-header h4 {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: bold;
+}
+
+.faq-item-body {
+  background-color: #F2F2F2;
+  padding: 22px 38px;
+  padding-right: 246px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.faq-item:not(.active) .up {
+  display: none;
+}
+
+.faq-item.active .down {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .faq-banner-pc {
+    display: none;
+  }
+  .faq-banner-pad {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .faq-banner h2 img {
+    width: 48px;
+    background: #FFFFFF;
+    border-radius: 50%;
+  }
+  .sec-page h3 {
+    font-size: 28px;
+    line-height: 63px;
+    margin-top: 40px;
+    margin-bottom: 32px;
+  }
+  .faq-item-header {
+    padding: 16px 24px;
+  }
+  .faq-item-header h4 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .faq-item-body {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 16px 24px;
+  }
+  .faq {
+    margin-bottom: 104px;
+  }
+}
+
+@media (max-width: 375px) {
+  .faq {
+    margin-bottom: 56px;
+  }
+  .faq-banner h2 {
+    font-size: 28px;
+    bottom: 8px;
+  }
+  .faq-banner h2 img {
+    width: 24px;
+    margin-left: 8px;
+  }
+  .sec-page h3 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+  .faq-item-header {
+    padding: 16px;
+  }
+  .faq-item-body {
+    padding: 16px;
+  }
 }
 /*# sourceMappingURL=all.css.map */
