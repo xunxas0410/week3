@@ -999,12 +999,6 @@ h3 {
   background-color: #aa06010d;
 }
 
-.container {
-  max-width: 792px;
-  margin: 0 auto;
-  padding: 64px 0 92px 0;
-}
-
 .sectionTitle {
   margin-bottom: 24px;
   text-align: center;
@@ -1190,17 +1184,15 @@ input[type="submit"]:hover {
 
 .selectlist label {
   font-size: 24px;
-  padding: 5%;
 }
 
 .selectlist {
-  padding: 22px 22px 38px 0;
+  padding: 12px 2px 10px 0;
 }
 
 .selectlist select {
   width: 266px;
   height: 45px;
-  margin-left: 22px;
 }
 
 .storecard {
@@ -1209,10 +1201,11 @@ input[type="submit"]:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
 }
 
 .storebox {
-  width: 384px;
+  width: 31.5%;
   margin-right: 14px;
   margin-bottom: 28px;
 }
@@ -1256,8 +1249,9 @@ input[type="submit"]:hover {
   color: #212529;
 }
 
-.infobtn {
-  width: 384px;
+.storeBtn {
+  display: block;
+  width: 100%;
   background: #000000;
   color: #fff;
   height: 68px;
@@ -1267,7 +1261,8 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 767px) {
-  .storecard li {
+  .storebox {
+    width: 100%;
     margin-left: 10%;
   }
 }
