@@ -594,6 +594,7 @@ img {
 .container {
   max-width: 1224px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
